@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-
-    <title>Buscar información IPs</title>
+    <title>WHOIS - Por Jose Ordaz</title>
 </head>
 <body>
+  
 <main class="container" >
+    <div class="headings">
+        
+    <h1 class="headings">WHOIS - DIGITAL VALUE S.L</h1>
+    <h2>Comprueba con el Whois los datos de contacto públicos de cualquier dominio ya registrado.</h2>
+</div>
     <form id="form">
         <label>
             IP del usuario
@@ -20,6 +26,18 @@
         </label>
         <button id="submit" type="submit">Buscar información de esta IP</button>
     </form>
+
+    <form id="form-domain">
+        <label>
+            Dominio o subdominio: 
+            <input id="input-domain" required type="text" placeholder="Introduce el dominio" >
+            <small>Por ejemplo: www.digitalvalue.es o zity.digitalvalue.es</small>
+        </label>
+        <button id="submit-domain" type="submit">Buscar información de este dominio</button>
+    </form>
+
+
+
     <div>
         <pre id="results">
 
@@ -28,6 +46,6 @@
 </main>
 </body>
     
-<script src="./ip-geolocation.js"></script>
+<script src="./whois.js"></script>
     
 </html>
