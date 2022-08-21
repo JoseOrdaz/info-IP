@@ -1,2 +1,2 @@
-# info-IP
-Buscar información IPs con RapidAPI
+# WHOIS
+Buscar información de dominios e IPs con WHOIS, hecho con RAPID API y JavaScript. 
